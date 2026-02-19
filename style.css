@@ -34,6 +34,24 @@ body {
     color: #000;
 }
 
+.login-status {
+    text-align: center;
+    color: red;
+    font-size: 14px;
+}
+
+.login-status.success {
+    color: green;
+}
+.login-status.error {
+    color: red;
+}
+
+.social-login > button {
+    color: black;
+    font-weight: bold;
+}
+
 .remember-me {
     display: flex;
     flex-direction: row;

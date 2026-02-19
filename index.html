@@ -6,24 +6,25 @@
     <title>Login Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <script src="main.js"></script>
 </head>
 <body>
-    <form class="login-form" action="">
+    <form class="login-form">
         <h2>LOGIN</h2>
         <input type="email" id="email" name="email" placeholder="Email" required>
         <input type="password" id="password" name="password" placeholder="Password" required>
+        <div class="login-status" style="display: none;"></div>
         <div class="remember-me">
             <input type="checkbox" id="remember-me"></input>
             <label for="remember-me">Remember me</label>
         </div>
-        <button type="submit">Login</button>
+        <button id="login-button" type="submit">Login</button>
         <div class="or-social-login">Or login with</div>
         <div class="social-login">
-            <button>Facebook</button>
-            <button>Google</button>
+            <button class="login-facebook">Facebook</button>
+            <button class="login-google">Google</button>
         </div>
         <div class="not-a-member">Not a member? <a href="">Sign up now</a></div>
     </form>
+    <script src="main.js"></script>
 </body>
 </html>
