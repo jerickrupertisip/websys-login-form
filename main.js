@@ -16,20 +16,16 @@ login_button.addEventListener("click", (event) => {
     // Simulate login validation (replace with actual validation logic)
     if (email === default_email && password === default_password) {
         login_status.textContent = "Login successful!";
-        login_status.classList.remove("error");
-        login_status.classList.add("success");
+        login_status.classList.replace("error", "success");
     } else if (email !== default_email) {
-        login_status.textContent = "User not found.";
-        login_status.classList.remove("success");
-        login_status.classList.add("error");
+        login_status.textContent = "User not found";
+        login_status.classList.replace("success", "error");
     } else if (email === default_email && password !== default_password) {
         login_status.textContent = "Incorrect Password";
-        login_status.classList.remove("success");
-        login_status.classList.add("error");
+        login_status.classList.replace("success", "error");
     } else {
         login_status.textContent = "Invalid email or password.";
-        login_status.classList.remove("success");
-        login_status.classList.add("error");
+        login_status.classList.replace("success", "error");
     }
 
     login_status.style.display = "block";
